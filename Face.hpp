@@ -24,8 +24,7 @@ class Face
 };
 
 Face::Face() {
-    row_inf = Null;
-
+    colors = {1,2,3,4,5,6}; 
 }
 
 #endif /* end of include guard FACE_HPP */
