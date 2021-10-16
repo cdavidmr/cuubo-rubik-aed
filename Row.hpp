@@ -14,8 +14,8 @@ class Row
         Row ();
         int get_sq_left();
         int get_sq_right();
-        int set_sq_right();
-        int set_sq_left();
+        int set_sq_right(int r);
+        int set_sq_left(int l);
         //~Row ();
     private:
         /* private data */
@@ -29,18 +29,18 @@ Row::Row() {
 }
 
 int Row::set_sq_right(int r){
-    return r;
+    sq_right = r;
 }
 
 int Row::set_sq_left(int l){
-    return sq_left;
+    sq_left = l;
 }
 
-int get_sq_right(){
+int Row::get_sq_right(){
     return sq_right;
 }
 
-int get_sq_left(){
+int Row::get_sq_left(){
     return sq_left;
 }
 
