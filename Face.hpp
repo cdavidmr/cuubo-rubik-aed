@@ -15,17 +15,15 @@ class Face
 {
     public:
         Face ();
-        std::vector<int> colors;
         //~Face ();
     private:
         /* private data */
+        int color;
         Row row_sup;
         Row row_inf;
 };
 
-Face::Face() {
-    colors = {1,2,3,4,5,6}; 
-}
+Face::Face() {}
 
 #endif /* end of include guard FACE_HPP */
 

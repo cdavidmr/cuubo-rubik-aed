@@ -20,6 +20,7 @@ class Cube
         //~Cube ();
     private:
         /* private data */
+        std::vector<int> colors;
         Face Up;
         Face Down;
         Face Front;
@@ -27,6 +28,10 @@ class Cube
         Face Right;
         Face Back;
 };
+
+Cube::Cube() {
+    colors = {1,2,3,4,5,6};
+}
 
 #endif /* end of include guard CUBE_HPP */
 
