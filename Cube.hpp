@@ -5,7 +5,6 @@
  */
 
 #ifndef CUBE_HPP
-
 #define CUBE_HPP
 
 
@@ -13,9 +12,14 @@ class Cube
 {
     public:
         Cube ();
-        virtual ~Cube ();
+        //~Cube ();
     private:
         /* private data */
+				void girarUp();
+				void girarDown();
+				void girarRight();
+				void girarLeft();
+				void girarBack();
 };
 
 #endif /* end of include guard CUBE_HPP */
