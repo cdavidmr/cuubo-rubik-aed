@@ -22,17 +22,35 @@ Gráficamente se ve así:
 class Face
 {
     public:
-        Face ();    //Constructor
-        //~Face ();  //Destructor
+        Face ();            //Constructor
+        //~Face ();         //Destructor
+        set_row_sup(int s);        
+        set_row_inf(int i);
+        get_row_sup();       //Obtener fila superior
+        get_row_inf();       //Obtener fila inferior
+               
     private:
-        int color;    //Color que poseerá la cara
-        Row row_sup;    //Fila superior
-        Row row_inf;    //Fila inferior
+        int color;          //Color que poseerá la cara
+        Row row_sup;        //Fila superior
+        Row row_inf;        //Fila inferior
 };
 
 Face::Face() {}     //Constructor
 
+Row Face::set_row_sup(int s){
+       row_sup = s;
+}
 
+Row Face::set_row_inf(int i){
+       row_inf = i;
+}
 
-#endif /* end of include guard FACE_HPP */
+Row Face::get_row_sup(){           //Obtener fila superior
+    return row_sup;
+}
 
+Row Face::get_row_inf(){           //Obtener fila inferior
+    return row_inf;
+}
+
+#endif 
